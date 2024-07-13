@@ -1,0 +1,96 @@
+:root {
+    --color-white1: #ffffff;
+    --color-grey1: #f0f0f0;
+    --color-grey2: #e4e4e4;
+    --color-blue1: rgb(0, 102, 255);
+    --color-blue2: rgb(0, 47, 255);
+    --color-balck1: #000000;
+    --color-green1: rgb(0, 128, 0);
+    --color-red1: rgb(255, 0, 0);
+}
+
+body {
+    font-family: 'calibri';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-grey1);
+    margin: 0;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 28px;
+    color: var(--color-blue1);
+}
+
+.container {
+    padding: 20px;
+    max-width: 340px;
+    min-width: 340px;
+    min-height: 200px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background: var(--color-white1);
+    justify-content: center;
+    text-align: center;
+}
+
+.valores {
+    margin: 2px;
+    padding: 0px 15px;
+    width: 80px;
+    height: 45px;
+    border-radius: 25px;
+    border: 0px;
+    background-color: var(--color-grey1);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rolador {
+    margin: 2px;
+    padding: 10px 15px;
+    width: 80px;
+    height: 40px;
+    border-radius: 25px;
+    border: 0px;
+    background-image: linear-gradient(to bottom, var(--color-blue1) , var(--color-blue2));
+    color: var(--color-white1);
+    font-weight: bold;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#diceContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.dice {
+    width: 45px;
+    height: 45px;
+}
+
+#result {
+    font-size: 1.2em;
+    margin: 10px 0px;
+}
+
+.result-item {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.result-item.green {
+    color: var(--color-green1);
+}
+
+.result-item.red {
+    color: var(--color-red1);
+}
